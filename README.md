@@ -1,19 +1,22 @@
 # CRUSF
 Files used to run the robot
 
-Ros packages used to run the roboteq motor controller, some files were edited to suit our project
+Ros packages used to run the roboteq motor controller, some files were edited to suit our project 
+
 To start the motor controller and PS4 controller run the command:
 ```
 roslaunch roboteq_controller driver.launch
 ```
-this will connect to the bluetooh controller automatically
+This will connect to the bluetooth controller automatically
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
 The Hokuyo LIDAR ip address is: 192.168.5.10
+
 To start it, you first need to set the ethernet profile to have deafult route of 192.168.5.10
+
 On the USF Collaborative Robot, the profile s already created it is just required to select it from the setting tab. The profile name is hokuyo
+
 To star scanning run the following command:
 ```
 rosrun urg_node urg_node _ip_address:="192.168.5.10"
